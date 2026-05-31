@@ -5,7 +5,7 @@
             "Action": [
                 "es:ESHttp*"
             ],
-            "Resource": "arn:aws:es:ap-northeast-2:${ACCOUNT_ID}:domain/${ES_DOMAIN_NAME}",
+            "Resource": "arn:aws:es:us-east-1:${ACCOUNT_ID}:domain/${ES_DOMAIN_NAME}",
             "Effect": "Allow"
         }
     ]
