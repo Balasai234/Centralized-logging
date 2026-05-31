@@ -106,7 +106,7 @@ helm upgrade --install fluent-bit eks/aws-for-fluent-bit \
   --namespace kube-system --set cloudWatchLogs.enabled=false \
   --set serviceAccount.create=false --set serviceAccount.name=fluent-bit \
   --set opensearch.enabled=true --set opensearch.awsRegion=us-east-1\
-  --set opensearch.host=search-cdit-es-c4xjhbkgqbgbw7hb45mjnos5iu.us-east-1.es.amazonaws.com \
+  --set opensearch.host=https://search-cdit-es-547qzk2pqlpdzvjjeilyficjki.us-east-1.es.amazonaws.com \
   --set opensearch.index=aws-fluent-bit
 
 curl -sS -u "${ES_DOMAIN_USER}:${ES_DOMAIN_PASSWORD}" \
